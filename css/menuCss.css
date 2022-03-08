@@ -79,7 +79,7 @@ body{
     margin: 0;
     font-size: 12px;
     width: 70%;
-    padding-left: 5%;
+    padding-left: 1vw;
 }
 .menu-item{
     border: 0.4px solid #f0f1f3;
@@ -107,7 +107,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.img-beerr{
-    left: 1vw;
-    position: relative;
+.img-beer{
+    padding-left: 1vw;
 }
