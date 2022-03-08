@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.header{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),url("../images/img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vh;
+    background-position: 5%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.header-title{
+    padding-left: 8%;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+.header-address{
+    padding-left: 8%;
+    display: flex;
+    align-items: center;
+}
+.header-address p{
+    display: inline;
+    
+}
+.left-menu{
+    width: 35vw;
+    float: left;
+    height: 80vh;
+    background-color: #f0f1f3;
+}
+.right-menu{
+    width: 65vw;
+    height: 80vh;
+    float: right;
+    padding-top: 2vw;
+    overflow: auto;
+    background-image: url("../images/background-right.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.right-menu-not-active{
+    display: none;
+}
+.right-menu-active{
+    display: grid;
+    grid-template-columns: repeat(1, 65%);
+    grid-auto-rows: 13%;
+    row-gap: 2%;
+    justify-content: center;
+}
+.left-menu-ul{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f1f3;
+
+}
+.left-menu-ul li {
+    width: 100%;
+    height: 10%;
+    margin: 2vh 0vh;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    cursor: pointer;
+}
+.left-menu-ul li:last-child{
+    margin-bottom: 0;
+}
+.left-menu-ul li p{
+    margin: 0;
+    font-size: 15px;
+    width: 100%;
+}
+.menu-item{
+    border: 0.4px solid #f0f1f3;
+    padding-top: 3%;
+    -webkit-box-shadow: -1px 1px 3px 3px rgba(197, 197, 197, 0.75);
+    -moz-box-shadow: -1px 1px 3px 3px rgba(197, 197, 197, 0.75);
+    box-shadow: -1px 1px 3px 3px rgba(197, 197, 197, 0.75);
+}
+.menu-item img{
+    width: 90%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+}
+.menu-item h5, .menu-item h3{
+    padding-left: 5%;
+    font-weight: bold;
+}
+.active{
+    font-weight: bolder;
+    border-right: 7px solid rgb(124, 192, 231);
+}
+.list-menu-item{
+    display: flex;
+    justify-content: space-between;
+}

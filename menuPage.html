@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menuCss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $(".left-menu-ul li p").on("click",function(e){
+                $(".left-menu-ul li p").removeClass("active");
+                $(".right-menu>div").removeClass("right-menu-active");
+                $(".right-menu>div").addClass("right-menu-not-active");
+                $(this).addClass("active");
+                var attr="."+$(this).attr("what");
+                $(attr).removeClass("right-menu-not-active");
+                $(attr).addClass("right-menu-active");
+            })
+        });
+    </script>
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h2 class="header-title">Point Café</h2>
+            <div class="header-address">
+                <img src="https://img.icons8.com/ultraviolet/30/000000/marker.png"/>
+                <p>ул. Сава Ковачевич 47Т, Скопје</p>
+            </div>
+        </div>
+    </header>
+    <div class="left-menu">
+        <ul class="left-menu-ul">
+            <li><p class="active" what="kafe">Кафе и топли напитоци</p></li>
+            <li><p what="bezalkoholni">Безалкохолни пијалоци</p></li>
+            <li><p what="pivo">Пиво и сајдери</p></li>
+            <li><p>Вино</p></li>
+            <li><p>Коктели</p></li>
+            <li><p>Виски и бренди</p></li>
+            <li><p>Водка</p></li>
+            <li><p>Рум и текила</p></li>
+        </ul>
+    </div>
+    <div class="right-menu">
+        <div class="kafe right-menu-active">
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h3>Margarita</h3>
+                <h5>Текила, ликер, лиме џус, сол,масдаасд</h5>
+                <h3>120ден</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h3>Margarita</h3>
+                <h5>Текила, ликер, лиме џус, сол,масдаасд</h5>
+                <h3>120ден</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h3>Margarita</h3>
+                <h5>Текила, ликер, лиме џус, сол,масдаасд</h5>
+                <h3>120ден</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h3>Margarita</h3>
+                <h5>Текила, ликер, лиме џус, сол,масдаасд</h5>
+                <h3>120ден</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h3>Margarita</h3>
+                <h5>Текила, ликер, лиме џус, сол,масдаасд</h5>
+                <h3>120ден</h3>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h3>Margarita</h3>
+                <h5>Текила, ликер, лиме џус, сол,масдаасд</h5>
+                <h3>120ден</h3>
+            </div>
+        </div>
+        <div class="bezalkoholni right-menu-not-active">
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h5>Coca cola</h5>
+                <h5>100ден</h5>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h5>Fanta</h5>
+                <h5>100ден</h5>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h5>Coca cola</h5>
+                <h5>100ден</h5>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h5>Fanta</h5>
+                <h5>100ден</h5>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h5>Coca cola</h5>
+                <h5>100ден</h5>
+            </div>
+            <div class="menu-item">
+                <img src="images/coktail.jpg" alt="">
+                <h5>Fanta</h5>
+                <h5>100ден</h5>
+            </div>
+        </div>
+        <div class="pivo right-menu-not-active">
+            <div class="list-menu-item">
+                <h4>Скопско</h4>
+                <h4>100ден</h4>
+            </div>
+            <div class="list-menu-item">
+                <h4>Скопско</h4>
+                <h4>100ден</h4>
+            </div>
+            <div class="list-menu-item">
+                <h4>Скопско</h4>
+                <h4>100ден</h4>
+            </div>
+            <div class="list-menu-item">
+                <h4>Скопско</h4>
+                <h4>100ден</h4>
+            </div>
+            <div class="list-menu-item">
+                <h4>Скопско</h4>
+                <h4>100ден</h4>
+            </div>
+            <div class="list-menu-item">
+                <h4>Скопско</h4>
+                <h4>100ден</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
