@@ -30,13 +30,13 @@ body{
     
 }
 .left-menu{
-    width: 35vw;
+    width: 36vw;
     float: left;
     height: 80vh;
     background-color: #f0f1f3;
 }
 .right-menu{
-    width: 65vw;
+    width: 64vw;
     height: 80vh;
     float: right;
     padding-top: 2vw;
@@ -71,6 +71,7 @@ body{
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding-left: 0.5vw;
 }
 .left-menu-ul li:last-child{
     padding-right: 5%;
